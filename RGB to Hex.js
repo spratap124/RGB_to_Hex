@@ -1,5 +1,6 @@
 function convertToHex(){
 
+				
    var r= Number(document.getElementById("R").value);
    var g= Number(document.getElementById("G").value);
    var b= Number(document.getElementById("B").value);
@@ -38,7 +39,6 @@ function convertToHex(){
         	bHex="0"+bHex;
         }
 
-        console.log(gHex);
         var toHex=rHex+gHex+bHex;
 
         /*check if color is black, then set the text color to white*/
