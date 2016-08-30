@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>RGB to HEX</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="RGB to Hex.js"> </script>
+
+</head>
+	<body>
+		<div class="wrapper">
+			<div class="rbgCntainer">
+				<div class="row">
+					<div class="cell">R:</div>
+					<div class="cell"><input type="text" maxlength="3" name="R" id="R" value="0"></div>
+				</div>
+				<div class="row">
+					<div class="cell">G:</div>
+					<div class="cell"><input type="text" maxlength="3" name="G" id="G" value="0"></div>
+				</div>
+				<div class="row">
+					<div class="cell">B:</div>
+					<div class="cell"><input type="text" maxlength="3" name="B" id="B" value="0"></div>
+				</div>
+				<div class="row">
+					<div class="cell"></div>
+					<div class="cell"><input type="button" name="convert" class="convertBtn" value="Convert" onclick="convertToHex()"></div>
+				</div>									
+			</div>
+			<div id="error">
+				
+			</div>
+			<div class="hexContainer" id="hexContainer">
+				
+			</div>
+		</div>
+	</body>
+</html>
