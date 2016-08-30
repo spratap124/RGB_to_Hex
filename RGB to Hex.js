@@ -1,6 +1,5 @@
 function convertToHex(){
 
-	/*use + to convert a strig to a number*/			
    var r= Number(document.getElementById("R").value);
    var g= Number(document.getElementById("G").value);
    var b= Number(document.getElementById("B").value);
