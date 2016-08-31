@@ -1,13 +1,13 @@
 function convertToHex(){
 
-   var r= Number(document.getElementById("R").value);
-   var g= Number(document.getElementById("G").value);
-   var b= Number(document.getElementById("B").value);
+   var r= Math.floor(Number(document.getElementById("R").value));
+   var g= Math.floor(Number(document.getElementById("G").value));
+   var b= Math.floor(Number(document.getElementById("B").value));
    
    /*check if R, G, B Is not a number */
    if(isNaN(r) || isNaN(g) || isNaN(b))
    {
-   	  document.getElementById("error").style.display="block";
+   	    document.getElementById("error").style.display="block";
         document.getElementById("error").innerHTML= "R ,G, B value should be of number type only";
         document.getElementById("hexContainer").style.backgroundColor="#efefef";
         document.getElementById("hexContainer").innerHTML="";
@@ -15,14 +15,14 @@ function convertToHex(){
    else{
 
     if(r>255 || g>255 || b>255){
-    	  document.getElementById("error").style.display="block";
+    	document.getElementById("error").style.display="block";
         document.getElementById("error").innerHTML= "R ,G, B value can not be greater than 255";
         document.getElementById("hexContainer").style.backgroundColor="#efefef";
         document.getElementById("hexContainer").innerHTML="";
 
     }
     else{
-    	  document.getElementById("error").style.display="none"; /*hide error conainer*/
+    	document.getElementById("error").style.display="none"; /*hide error conainer*/
 
         var rHex=r.toString(16);
         var gHex=g.toString(16);
